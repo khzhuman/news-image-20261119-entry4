@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><title>Thursday 19 November 2026</title><style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{width:1024px;height:1024px;background:#f7f2e4;font-family:'Noto Sans',sans-serif;color:#191919}
-.page{width:1024px;height:1024px;padding:8px 13px 7px;display:flex;flex-direction:column;gap:4px}
-.mast{background:#1d4d3b;color:#f7f2e4;padding:5px 14px 5px}
-.kick{display:flex;justify-content:space-between;font-size:11px;letter-spacing:2px;font-weight:700;color:#e8c85a}
-h1{font-family:'Noto Serif',serif;font-size:49px;line-height:1.03;text-align:center;font-weight:900;letter-spacing:.5px}
-.sub{text-align:center;font-style:italic;font-size:13.5px;color:#d8e8dd;margin-top:2px}
-.regions{display:flex;height:22px;font-size:10px;font-weight:800;color:#fff}
-.regions div{display:flex;align-items:center;justify-content:center;white-space:nowrap}
-.nums{display:flex;border-top:2.5px solid #191919;border-bottom:2.5px solid #191919;padding:4px 0}
-.num{flex:1;text-align:center;border-left:1px solid #c9bc96;padding:0 4px}
-.num:first-child{border-left:none}
-.num b{font-family:'Noto Serif',serif;font-size:24px;display:block;color:#1d4d3b;line-height:1.05}
-.num span{font-size:10px;line-height:1.15;display:block}
-.heroes{display:flex;gap:8px}
-.hero{flex:1;border:1.5px solid #191919;background:#fffdf6}
-.hero svg{display:block;width:100%;height:84px}
-.hero .bd{padding:5px 9px 6px}
-.tag{font-size:10.5px;font-weight:800;letter-spacing:.4px}
-.badge{display:inline-block;background:#b3261e;color:#fff;width:18px;height:18px;text-align:center;border-radius:50%;font-size:11.5px;line-height:18px;margin-right:4px;font-weight:800}
-.hero h2{font-family:'Noto Serif',serif;font-size:21.5px;line-height:1.1;margin-top:2px}
-.hero p{font-size:11.5px;line-height:1.26;margin-top:3px}
-.meds{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
-.med{border:1.2px solid #191919;background:#fffdf6}
-.med svg{display:block;width:100%;height:34px}
-.med .bd{padding:3px 7px 5px}
-.med h3{font-family:'Noto Serif',serif;font-size:13.5px;line-height:1.12;margin-top:1px}
-.med p{font-size:10.8px;line-height:1.22;margin-top:2px}
-.bottom{display:flex;gap:8px}
-.mapbox{width:400px;flex:none;border:1.5px solid #191919;background:#e9f1ee;padding:4px 8px 3px}
-.mapbox h4,.also h4{font-size:12px;letter-spacing:1px}
-.mapbox svg{display:block;width:100%;height:116px}
-.mapnote{font-size:10px;color:#444;margin-top:1px}
-.also{flex:1;min-width:0}
-.also h4{border-bottom:2px solid #191919;padding-bottom:2px}
-.bcols{display:flex;gap:10px;margin-top:2px}
-.bcols>div{flex:1;min-width:0}
-.brief{font-size:10.5px;line-height:1.2;padding:0.5px 0}
-.brief b{font-weight:800}
-.clock{display:flex;justify-content:space-between;border-top:2px solid #191919;padding-top:3px;font-size:10.5px}
-.clock span{white-space:nowrap}
-.clock b{color:#b3261e}
-.datecheck{border:1.5px dashed #b3261e;padding:4px 8px;font-size:11px;line-height:1.3}
-.datecheck b{color:#b3261e}
-.foot{font-size:10px;display:flex;justify-content:space-between;color:#555}
-.AS{color:#c2571b}.AM{color:#2e7d4f}.EU{color:#2b5ea7}.GL{color:#6b5b95}.ME{color:#b3261e}.AF{color:#a67c00}.OC{color:#0e7c7b}
-</style></head><body><div class="page">
-<div class="mast">
-<div class="kick"><span>THE WORLD IN ONE PICTURE</span><span>44 STORIES &middot; 7 REGIONS &middot; 13 DRAWN</span></div>
+*{box-sizing:border-box;margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0}
+body{color:#191919;background-color:#f7f2e4;font-family:'Noto Sans',sans-serif;width:1024px;height:1024px}
+.sheet{display:flex;flex-direction:column;gap:4px;width:1024px;height:1024px;padding-top:8px;padding-right:13px;padding-bottom:7px;padding-left:13px}
+.masthead{color:#f7f2e4;background-color:#1d4d3b;padding:5px 14px}
+.kicker{font-weight:700;color:#e8c85a;font-size:11px;letter-spacing:2px;display:flex;justify-content:space-between}
+h1{text-align:center;font-weight:900;font-family:'Noto Serif',serif;font-size:49px;line-height:1.03;letter-spacing:.5px}
+.deck{font-style:italic;text-align:center;color:#d8e8dd;font-size:13.5px;margin-top:2px}
+.regions{height:22px;display:flex;color:#fff;font-size:10px;font-weight:800}
+.regions>div{white-space:nowrap;display:flex;align-items:center;justify-content:center}
+.nums{display:flex;padding-top:4px;padding-bottom:4px;padding-left:0;padding-right:0;border-top-width:2.5px;border-top-style:solid;border-top-color:#191919;border-bottom-width:2.5px;border-bottom-style:solid;border-bottom-color:#191919}
+.num{flex:1 1 0%;text-align:center;padding-top:0;padding-bottom:0;padding-left:4px;padding-right:4px;border-left-width:1px;border-left-style:solid;border-left-color:#c9bc96}
+.num:first-child{border-left:0}
+.num strong{display:block;color:#1d4d3b;font-family:'Noto Serif',serif;font-size:24px;line-height:1.05}
+.num span{display:block;font-size:10px;line-height:1.15}
+.leads{gap:8px;display:flex}
+.hero{background-color:#fffdf6;flex:1 1 0%;border-width:1.5px;border-style:solid;border-color:#191919}
+.hero svg{width:100%;height:84px;display:block}
+.hero .bd{padding-top:5px;padding-right:9px;padding-bottom:6px;padding-left:9px}
+.tag{letter-spacing:.4px;font-size:10.5px;font-weight:800}
+.badge{font-weight:800;margin-right:4px;line-height:18px;font-size:11.5px;border-radius:50%;text-align:center;width:18px;height:18px;color:#fff;background-color:#b3261e;display:inline-block}
+.hero h2{margin-top:2px;font-family:'Noto Serif',serif;font-size:21.5px;line-height:1.1}
+.hero p{margin-top:3px;font-size:11.5px;line-height:1.26}
+.meds{gap:6px;display:grid;grid-template-columns:repeat(5,1fr)}
+.med{background-color:#fffdf6;border-width:1.2px;border-style:solid;border-color:#191919}
+.med svg{height:34px;width:100%;display:block}
+.med .bd{padding-top:3px;padding-right:7px;padding-bottom:5px;padding-left:7px}
+.med h3{margin-top:1px;font-family:'Noto Serif',serif;font-size:13.5px;line-height:1.12}
+.med p{margin-top:2px;font-size:10.8px;line-height:1.22}
+.bottom{gap:8px;display:flex}
+.mapbox{flex:none;width:400px;background-color:#e9f1ee;border-width:1.5px;border-style:solid;border-color:#191919;padding-top:4px;padding-right:8px;padding-bottom:3px;padding-left:8px}
+.also h4,.mapbox h4{letter-spacing:1px;font-size:12px}
+.mapbox svg{width:100%;height:116px;display:block}
+.mapcap{margin-top:1px;color:#444;font-size:10px}
+.also{min-width:0;flex:1 1 0%}
+.also h4{padding-bottom:2px;border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:#191919}
+.briefcols{margin-top:2px;display:flex;gap:10px}
+.briefcols>div{min-width:0;flex:1 1 0%}
+.brief{line-height:1.2;font-size:10.5px;padding-top:0.5px;padding-bottom:0.5px;padding-left:0;padding-right:0}
+.briefcols .brief b{font-weight:800}
+.ticker{font-size:10.5px;padding-top:3px;display:flex;justify-content:space-between;border-top-width:2px;border-top-style:solid;border-top-color:#191919}
+.ticker span{white-space:nowrap}
+.ticker b{color:#b3261e}
+.datebox{line-height:1.3;font-size:11px;padding:4px 8px;border-width:1.5px;border-style:dashed;border-color:#b3261e}
+.datebox b{color:#b3261e}
+.colophon{color:#555;font-size:10px;display:flex;justify-content:space-between}
+.OC{color:#0e7c7b}
+.AF{color:#a67c00}
+.ME{color:#b3261e}
+.GL{color:#6b5b95}
+.EU{color:#2b5ea7}
+.AM{color:#2e7d4f}
+.AS{color:#c2571b}
+</style></head><body><div class="sheet">
+<div class="masthead">
+<div class="kicker"><span>THE WORLD IN ONE PICTURE</span><span>44 STORIES &middot; 7 REGIONS &middot; 13 DRAWN</span></div>
 <h1>Thursday 19 November 2026</h1>
-<div class="sub">Three nuclear powers meet &middot; The world court rules &middot; Vice City opens its doors</div>
+<div class="deck">Three nuclear powers meet &middot; The world court rules &middot; Vice City opens its doors</div>
 </div>
 <div class="regions">
-<div style="width:20.5%;background:#c2571b">ASIA 9</div><div style="width:27.5%;background:#2e7d4f">AMERICAS 13</div><div style="width:18.2%;background:#2b5ea7">EUROPE 8</div><div style="width:9.1%;background:#6b5b95">GLOBAL 4</div><div style="width:11.4%;background:#b3261e">MID EAST 5</div><div style="width:6.8%;background:#a67c00">AFRICA 3</div><div style="width:6.5%;background:#0e7c7b">OCEANIA 2</div>
+<div style="background-color:#c2571b;width:20.5%">ASIA 9</div>
+<div style="background-color:#2e7d4f;width:27.5%">AMERICAS 13</div>
+<div style="background-color:#2b5ea7;width:18.2%">EUROPE 8</div>
+<div style="background-color:#6b5b95;width:9.1%">GLOBAL 4</div>
+<div style="background-color:#b3261e;width:11.4%">MID EAST 5</div>
+<div style="background-color:#a67c00;width:6.8%">AFRICA 3</div>
+<div style="background-color:#0e7c7b;width:6.5%">OCEANIA 2</div>
 </div>
 <div class="nums">
-<div class="num"><b>3</b><span>leaders at one table in Shenzhen</span></div>
-<div class="num"><b>$81.3bn</b><span>Anthropic&rsquo;s record IPO</span></div>
-<div class="num"><b>25.9bn km</b><span>Voyager 1&rsquo;s distance</span></div>
-<div class="num"><b style="white-space:nowrap">90&ndash;100 km/h</b><span>Akvan&rsquo;s winds</span></div>
-<div class="num"><b>$582m</b><span>Deutsche Bank&rsquo;s Epstein deals</span></div>
-<div class="num"><b>133</b><span>Duckett&rsquo;s runs</span></div>
+<div class="num"><strong>3</strong><span>leaders at one table in Shenzhen</span></div>
+<div class="num"><strong>$81.3bn</strong><span>Anthropic&rsquo;s record IPO</span></div>
+<div class="num"><strong>25.9bn km</strong><span>Voyager 1&rsquo;s distance</span></div>
+<div class="num"><strong style="white-space:nowrap">90&ndash;100 km/h</strong><span>Akvan&rsquo;s winds</span></div>
+<div class="num"><strong>$582m</strong><span>Deutsche Bank&rsquo;s Epstein deals</span></div>
+<div class="num"><strong>133</strong><span>Duckett&rsquo;s runs</span></div>
 </div>
-<div class="heroes">
+<div class="leads">
 <div class="hero">
 <svg viewBox="0 0 320 104" preserveAspectRatio="none"><rect width="320" height="104" fill="#f2d8a0"/><circle cx="270" cy="22" r="14" fill="#e8a33d"/><rect x="0" y="70" width="320" height="34" fill="#7a5c3e"/><rect x="18" y="34" width="30" height="70" fill="#3d5a80"/><rect x="58" y="20" width="34" height="84" fill="#293241"/><rect x="102" y="44" width="28" height="60" fill="#3d5a80"/><rect x="140" y="14" width="36" height="90" fill="#293241"/><rect x="186" y="38" width="30" height="66" fill="#3d5a80"/><rect x="226" y="26" width="34" height="78" fill="#293241"/><rect x="270" y="46" width="28" height="58" fill="#3d5a80"/><g><rect x="150" y="8" width="2" height="40" fill="#1a1a1a"/><rect x="152" y="8" width="20" height="12" fill="#de2910"/><circle cx="157" cy="14" r="2" fill="#ffde00"/></g><g><rect x="196" y="8" width="2" height="40" fill="#1a1a1a"/><rect x="198" y="8" width="20" height="12" fill="#fff"/><rect x="198" y="8" width="20" height="2" fill="#b22234"/><rect x="198" y="12" width="20" height="2" fill="#b22234"/><rect x="198" y="16" width="20" height="2" fill="#b22234"/><rect x="198" y="8" width="8" height="6" fill="#3c3b6e"/></g><g><rect x="104" y="8" width="2" height="40" fill="#1a1a1a"/><rect x="106" y="8" width="20" height="12" fill="#fff"/><rect x="106" y="12" width="20" height="4" fill="#0039a6"/><rect x="106" y="16" width="20" height="4" fill="#d52b1e"/></g></svg>
 <div class="bd"><span class="badge">1</span><span class="tag AS">ASIA &middot; SUMMIT</span><h2>Three presidents, one table in Shenzhen</h2><p>The three presidents meet for the first time, on the APEC sidelines &mdash; nuclear arms cuts on the agenda. &ldquo;We do not expect any agreement,&rdquo; a senior US official said.</p></div>
@@ -154,47 +166,56 @@ h1{font-family:'Noto Serif',serif;font-size:49px;line-height:1.03;text-align:cen
 <text x="366" y="17" font-family="Noto Sans" font-size="13" fill="#6b5b95" text-anchor="middle">&#9733;</text>
 <text x="378" y="29" font-family="Noto Sans" font-size="8.5" font-weight="700" fill="#6b5b95" text-anchor="end">&#9733; = DEEP SPACE</text>
 </svg>
-<div class="mapnote">Pins = the drawn stories, coloured by region &middot; dots = the briefs &middot; &#9733; = Voyager 1 itself, one light-day out</div>
+<div class="mapcap">Pins = the drawn stories, coloured by region &middot; dots = the briefs &middot; &#9733; = Voyager 1 itself, one light-day out</div>
 </div>
 <div class="also">
 <h4>ALSO ON THURSDAY &mdash; THE BRIEFS</h4>
-<div class="bcols"><div>
-<div class="brief"><b class="AS">14 INDIA</b> &mdash; Modi hosts William and Kate</div>
-<div class="brief"><b class="AS">15 APEC</b> &mdash; Leaders&rsquo; joint declaration due today</div>
-<div class="brief"><b class="AS">16 ASIA</b> &mdash; Canada&ndash;China ties warm (Wed)</div>
-<div class="brief"><b class="AS">17 INDIA</b> &mdash; India re-elected to ITU Council (Wed)</div>
-<div class="brief"><b class="AS">18 INDIA</b> &mdash; India 2&ndash;1 Pakistan in SAFF final (Wed)</div>
-<div class="brief"><b class="AM">19 US</b> &mdash; Tougher green-card job rules proposed</div>
-<div class="brief"><b class="AM">20 US</b> &mdash; Liu Yunping, first Asian American Dem chair</div>
-<div class="brief"><b class="AM">21 US</b> &mdash; Senators: AI cyber threats outpace defences</div>
-<div class="brief"><b class="AM">22 US</b> &mdash; Trump &lsquo;unhappy&rsquo; with Vance, praised Rubio</div>
-<div class="brief"><b class="AM">23 US</b> &mdash; Ukraine aid faces a Congress fight</div>
-<div class="brief"><b class="AM">24 US</b> &mdash; Jeffries picked for Speaker (Wed)</div>
-<div class="brief"><b class="AM">25 US</b> &mdash; Nvidia earnings day (Tue)</div>
-<div class="brief"><b class="AM">26 US</b> &mdash; Fed minutes released (Wed)</div>
-<div class="brief"><b class="AM">27 US</b> &mdash; Merchant jailed 27.5 years in plot case (Wed)</div>
-<div class="brief"><b class="AM">28 ALASKA</b> &mdash; Peltola wins Alaska Senate seat (Tue)</div>
-<div class="brief"><b class="AM">29 NEW YORK</b> &mdash; Van Gogh sells for record $190.4m (Wed)</div>
+<div class="briefcols"><div>
+<p class="brief"><span class="AS"><b>14 INDIA</b></span> &mdash; Modi hosts William and Kate</p>
+<p class="brief"><span class="AS"><b>15 APEC</b></span> &mdash; Leaders&rsquo; joint declaration due today</p>
+<p class="brief"><span class="AS"><b>16 ASIA</b></span> &mdash; Canada&ndash;China ties warm (Wed)</p>
+<p class="brief"><span class="AS"><b>17 INDIA</b></span> &mdash; India re-elected to ITU Council (Wed)</p>
+<p class="brief"><span class="AS"><b>18 INDIA</b></span> &mdash; India 2&ndash;1 Pakistan in SAFF final (Wed)</p>
+<p class="brief"><span class="AM"><b>19 US</b></span> &mdash; Tougher green-card job rules proposed</p>
+<p class="brief"><span class="AM"><b>20 US</b></span> &mdash; Liu Yunping, first Asian American Dem chair</p>
+<p class="brief"><span class="AM"><b>21 US</b></span> &mdash; Senators: AI cyber threats outpace defences</p>
+<p class="brief"><span class="AM"><b>22 US</b></span> &mdash; Trump &lsquo;unhappy&rsquo; with Vance, praised Rubio</p>
+<p class="brief"><span class="AM"><b>23 US</b></span> &mdash; Ukraine aid faces a Congress fight</p>
+<p class="brief"><span class="AM"><b>24 US</b></span> &mdash; Jeffries picked for Speaker (Wed)</p>
+<p class="brief"><span class="AM"><b>25 US</b></span> &mdash; Nvidia earnings day (Tue)</p>
+<p class="brief"><span class="AM"><b>26 US</b></span> &mdash; Fed minutes released (Wed)</p>
+<p class="brief"><span class="AM"><b>27 US</b></span> &mdash; Merchant jailed 27.5 years in plot case (Wed)</p>
+<p class="brief"><span class="AM"><b>28 ALASKA</b></span> &mdash; Peltola wins Alaska Senate seat (Tue)</p>
+<p class="brief"><span class="AM"><b>29 NEW YORK</b></span> &mdash; Van Gogh sells for record $190.4m (Wed)</p>
 </div><div>
-<div class="brief"><b class="EU">30 FRANCE</b> &mdash; Minister: M&eacute;lenchon could win presidency</div>
-<div class="brief"><b class="EU">31 PARIS</b> &mdash; Police rally, demanding a risk allowance</div>
-<div class="brief"><b class="EU">32 EUROPE</b> &mdash; EU&rsquo;s &euro;45bn Ukraine loan unveiled (Wed)</div>
-<div class="brief"><b class="EU">33 LATVIA</b> &mdash; Saeima approves Kulbergs cabinet (Wed)</div>
-<div class="brief"><b class="EU">34 BLACK SEA</b> &mdash; Gas Husky tanker sank after hits (Tue)</div>
-<div class="brief"><b class="EU">35 UKRAINE</b> &mdash; UN: 372 civilians killed in October (Wed)</div>
-<div class="brief"><b class="GL">36 SCIENCE</b> &mdash; Earth missing a billion years of rock</div>
-<div class="brief"><b class="GL">37 ANTALYA</b> &mdash; COP31 grinds on, nations still split</div>
-<div class="brief"><b class="ME">38 SAUDI</b> &mdash; Danger passed in three southern cities</div>
-<div class="brief"><b class="ME">39 GAZA</b> &mdash; WFP: one hot meal every two days (Wed)</div>
-<div class="brief"><b class="ME">40 HORMUZ</b> &mdash; Fourth tanker hit: Navig8 Messi (Wed)</div>
-<div class="brief"><b class="AF">41 LIBYA</b> &mdash; Cocaine and millions of pills seized</div>
-<div class="brief"><b class="AF">42 DR CONGO</b> &mdash; Rival peace bids fail (Wed)</div>
-<div class="brief"><b class="OC">43 AUSTRALIA</b> &mdash; Canberra sanctions settler builders (Wed)</div>
-<div class="brief"><b class="OC">44 AUSTRALIA</b> &mdash; Duckett&rsquo;s 133 leads England</div>
+<p class="brief"><span class="EU"><b>30 FRANCE</b></span> &mdash; Minister: M&eacute;lenchon could win presidency</p>
+<p class="brief"><span class="EU"><b>31 PARIS</b></span> &mdash; Police rally, demanding a risk allowance</p>
+<p class="brief"><span class="EU"><b>32 EUROPE</b></span> &mdash; EU&rsquo;s &euro;45bn Ukraine loan unveiled (Wed)</p>
+<p class="brief"><span class="EU"><b>33 LATVIA</b></span> &mdash; Saeima approves Kulbergs cabinet (Wed)</p>
+<p class="brief"><span class="EU"><b>34 BLACK SEA</b></span> &mdash; Gas Husky tanker sank after hits (Tue)</p>
+<p class="brief"><span class="EU"><b>35 UKRAINE</b></span> &mdash; UN: 372 civilians killed in October (Wed)</p>
+<p class="brief"><span class="GL"><b>36 SCIENCE</b></span> &mdash; Earth missing a billion years of rock</p>
+<p class="brief"><span class="GL"><b>37 ANTALYA</b></span> &mdash; COP31 grinds on, nations still split</p>
+<p class="brief"><span class="ME"><b>38 SAUDI</b></span> &mdash; Danger passed in three southern cities</p>
+<p class="brief"><span class="ME"><b>39 GAZA</b></span> &mdash; WFP: one hot meal every two days (Wed)</p>
+<p class="brief"><span class="ME"><b>40 HORMUZ</b></span> &mdash; Fourth tanker hit: Navig8 Messi (Wed)</p>
+<p class="brief"><span class="AF"><b>41 LIBYA</b></span> &mdash; Cocaine and millions of pills seized</p>
+<p class="brief"><span class="AF"><b>42 DR CONGO</b></span> &mdash; Rival peace bids fail (Wed)</p>
+<p class="brief"><span class="OC"><b>43 AUSTRALIA</b></span> &mdash; Canberra sanctions settler builders (Wed)</p>
+<p class="brief"><span class="OC"><b>44 AUSTRALIA</b></span> &mdash; Duckett&rsquo;s 133 leads England</p>
 </div></div>
 </div>
 </div>
-<div class="clock"><span><b>MIDNIGHT</b> GTA VI unlocks</span><span><b>10:00 UTC</b> ICJ reads its judgment</span><span><b>DAY</b> Shenzhen summit</span><span><b>17:00 UTC</b> NASA briefing</span><span><b>EVENING</b> APEC declaration due</span></div>
-<div class="datecheck"><b>DATE CHECK &mdash; LEFT OUT AS NEWS, ON PURPOSE:</b> Alaska&rsquo;s result, Nvidia&rsquo;s earnings and the Gas Husky sinking broke Tuesday; the EU loan, the Fed minutes and Australia&rsquo;s sanctions broke Wednesday. Voyager crossed its light-day Wednesday too &mdash; today&rsquo;s story is NASA&rsquo;s briefing. Older items run only as briefs, day named.</div>
-<div class="foot"><span>Every story here happened, or was first reported, on Thursday 19 November 2026. Claims are put as claims and credited to who made them.</span><span>Reuters &middot; AP &middot; BBC &middot; NASA &middot; IMD &middot; Pew &middot; FT</span></div>
+<div class="ticker">
+<span><b>MIDNIGHT</b> GTA VI unlocks</span>
+<span><b>10:00 UTC</b> ICJ reads its judgment</span>
+<span><b>DAY</b> Shenzhen summit</span>
+<span><b>17:00 UTC</b> NASA briefing</span>
+<span><b>EVENING</b> APEC declaration due</span>
+</div>
+<div class="datebox"><b>DATE CHECK &mdash; LEFT OUT AS NEWS, ON PURPOSE:</b> Alaska&rsquo;s result, Nvidia&rsquo;s earnings and the Gas Husky sinking broke Tuesday; the EU loan, the Fed minutes and Australia&rsquo;s sanctions broke Wednesday. Voyager crossed its light-day Wednesday too &mdash; today&rsquo;s story is NASA&rsquo;s briefing. Older items run only as briefs, day named.</div>
+<div class="colophon">
+<span>Every story here happened, or was first reported, on Thursday 19 November 2026. Claims are put as claims and credited to who made them.</span>
+<span>Reuters &middot; AP &middot; BBC &middot; NASA &middot; IMD &middot; Pew &middot; FT</span>
+</div>
 </div></body></html>
